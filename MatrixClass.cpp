@@ -29,7 +29,7 @@ private:
 				}
 			}
 		}
-		void set_size(int rows, int columns)
+		void check_size(int rows, int columns)
 		{
 			
 			if (rows <= 0 || columns <=0 )
@@ -130,7 +130,7 @@ int main(int argc, char** argv)
 	std::cin >> columns;
 	Matrix twoD(rows, columns);
 
-	twoD.set_size(rows,columns);
+	twoD.check_size(rows,columns);
 	std::cout << "We have generated the following matrix_\n";
 	twoD.Print_array (rows, columns);
 	std::cout << "Please enter the columns which need to be swapped:_ ";
